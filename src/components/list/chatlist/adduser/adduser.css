@@ -1,0 +1,81 @@
+/* body {
+    backdrop-filter: blur(5px);
+} */
+
+.adduser {
+    width: max-content;
+    height: max-content;
+    padding: 30px;
+    background-color: rgb(17, 25, 40);
+    border-radius: 10px;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+
+    form{
+        display:flex ;
+        gap: 20px;
+
+        input{
+            padding: 20px;
+            border-radius: 10px;
+            border: none;
+            outline: none;
+        }
+        button{
+            padding: 20px ;
+            border-radius: 10px;
+            border: none;
+            background-color: #1a73e8;
+            color: #fff;
+            cursor: pointer;
+        }
+    }
+    .user{
+        margin-top: 50px;
+        padding: 0;
+        display: flex;
+        justify-content: space-between ;
+        align-items: center;
+
+        .details {
+            background-color: rgba(128, 128, 128, 0.296);
+            width: 100%;
+            padding: 5px;
+            border-radius: 10px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between; /* Ensure items are spaced evenly */
+            gap: 20px;
+            overflow: hidden;
+        }
+        
+        .details img {
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            object-fit: cover;
+        }
+        
+        .details button {
+            padding: 10px 20px; /* Adjust padding for better symmetry */
+            border-radius: 10px;
+            border: none;
+            background-color: #1a73e8;
+            color: #fff;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+        
+        .details button:hover {
+            background-color: #155ab6;
+        }
+
+        
+
+    }
+}
+
