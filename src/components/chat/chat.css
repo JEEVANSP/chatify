@@ -54,127 +54,139 @@
   
   .top .icon img {
     width: 20px;
-    height: 20px;
-  }
-  
-  .center {
-    -ms-overflow-style: none; /* IE and Edge */
-    scrollbar-width: none; /* Firefox */
-  }
-  
-  .center::-webkit-scrollbar {
-    display: none; /* Chrome, Safari, Opera */
-  }
-  
-  .center {
-    padding: 20px;
-    flex: 1;
-    overflow-y: auto; /* For vertical scroll */
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
-  }
-  
+    height: 20px; 
+}
 
+.center {
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
+}
 
-  
+.center::-webkit-scrollbar {
+  display: none; /* Chrome, Safari, Opera */
+}
 
+.center {
+  padding: 20px;
+  flex: 1;
+  overflow-y: auto; /* For vertical scroll */
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
 
-  
-  .message {
-    display: flex;
-    gap: 20px;
-    max-width: 70%;
-  }
-  
-  .message.own {
-    align-self: flex-end;
-  }
-  
-  .message img {
-    width: 30px;
-    height: 30px;
-    border-radius: 50%;
+.message {
+  display: flex;
+  gap: 20px;
+  max-width: 70%;
+}
+
+.message.own {
+  align-self: flex-end;
+}
+
+.message img {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.message .texts {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.message .texts p,
+.message .texts .audio-message {
+  padding: 20px;
+  border-radius: 10px;
+  background-color: rgba(17, 25, 40, 0.3);
+}
+
+.message.own .texts p,
+.message.own .texts .audio-message {
+  background-color: rgb(13, 19, 188);
+}
+
+.message .texts span {
+  font-size: 12px;
+  color: #a5a5a5;
+}
+
+.message .texts img {
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+.bottom {
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-top: 1px solid #dddddd35;
+  gap: 20px;
+}
+
+.icons {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.bottom img {
+  width: 20px;
+  height: 20px;
+  cursor: pointer;
+}
+
+.bottom input {
+  flex: 1;
+  padding: 20px;
+  border: none;
+  border-radius: 10px;
+  background-color: rgba(17, 25, 40, 0.5);
+  color: white;
+  outline: none;
+  font-size: 16px;
+}
+
+.emoji {
+  position: relative;
+}
+
+.emoji .picker {
+  position: absolute;
+  bottom: 50px;
+  left: 0;
+}
+
+.sendButton {
+  background-color: rgb(26, 226, 26);
+  color: black;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+  cursor: pointer;
+}
+
+/* New styles for recording indicator */
+.recording-text {
+  color: red;
+  font-weight: bold;
+}
+
+.mic-recording {
+  filter: invert(27%) sepia(95%) saturate(7486%) hue-rotate(359deg) brightness(106%) contrast(115%);
+}
+.sent-image {
+    max-width: 200px;
+    max-height: 200px;
+    border-radius: 8px;
     object-fit: cover;
-  }
-  
-  .message .texts {
-    flex: 1;
-    display: flex;
-    flex-direction: column;
-    gap: 5px;
-  }
-  
-  .message .texts p {
-    padding: 20px;
-    border-radius: 10px;
-    background-color: rgba(17, 25, 40, 0.3);
-  }
-  
-  .message.own .texts p {
-    background-color: rgb(13, 19, 188);
-  }
-  
-  .message .texts span {
-    font-size: 12px;
-    color: #a5a5a5;
-  }
-  
-  .message .texts img {
-    width: 100%;
-    height: 300px;
-    object-fit: cover;
-    border-radius: 10px;
-  }
-  
-  .bottom {
-    padding: 20px;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    border-top: 1px solid #dddddd35;
-    gap: 20px;
-  }
-  
-  .icons {
-    display: flex;
-    align-items: center;
-    gap: 20px;
-  }
-  
-  .bottom img {
-    width: 20px;
-    height: 20px;
-    cursor: pointer;
-  }
-  
-  .bottom input {
-    flex: 1;
-    padding: 20px;
-    border: none;
-    border-radius: 10px;
-    background-color: rgba(17, 25, 40, 0.5);
-    color: white;
-    outline: none;
-    font-size: 16px;
-  }
-  
-  .emoji {
-    position: relative;
-  }
-  
-  .emoji .picker {
-    position: absolute;
-    bottom: 50px;
-    left: 0;
-  }
-  
-  .sendButton {
-    background-color: rgb(26, 226, 26);
-    color: black;
-    border: none;
-    border-radius: 5px;
-    padding: 10px 20px;
-    cursor: pointer;
   }
   

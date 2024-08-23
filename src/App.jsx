@@ -6,8 +6,8 @@ import Notification from "./components/notification/notification.jsx";
 import { useUserStore } from "./lib/userStore.js";
 import { useEffect } from "react";
 import { onAuthStateChanged } from "firebase/auth";
-import { auth } from "./lib/firebase.js";
 import { useChatStore } from "./lib/chatStore.js";
+import { auth } from "./lib/firebase.js";
 
 const App = () => {
   const { currentUser, isLoading, fetchUserInfo, resetUser } = useUserStore();
